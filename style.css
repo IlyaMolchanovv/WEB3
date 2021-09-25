@@ -38,12 +38,12 @@ header{
 
 #main-aside-wrapper a4 {
   flex: 3;
-  order: 4;
+  order: 5;
 }
 
 #main-aside-wrapper a5 {
   flex: 3;
-  order: 5;
+  order: 4;
   margin: 0 auto;
 }
 
@@ -60,26 +60,32 @@ header{
   }
   #main-aside-wrapper a4{
 	  flex: 3;
-	  order: 5;
+	  order: 4;
   }
   #main-aside-wrapper a5{
 	  flex: 3;
-	  order: 4;
+	  order: 5;
   }
   .menu ul {
-	
-  }
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
   .menu li{
+	float: left;
 	color: #e6ecf0;
-	display: block;
-  }
+}
 
   .menu a {
+	display: block;
+	padding: 1em;
 	border: 1px solid #ADC0CE;
 	background: #e6ecf0;
 	color: #29838C;
-  }
+ }
 }
 
 .title{
@@ -103,25 +109,7 @@ li{
 	text-align: left;
 }
 
-.menu ul {
-	overflow: hidden;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.menu li{
-	float: left;
-	color: #e6ecf0;
-}
-
-.menu a {
-	display: block;
-	padding: 1em;
-	border: 1px solid #ADC0CE;
-	background: #e6ecf0;
-	color: #29838C;
+nav{
 }
 
 table, th, td {
