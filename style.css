@@ -13,6 +13,7 @@ header{
   flex-direction: column;
   display: flex;
 }
+
 #main-aside-wrapper a1, #main-aside-wrapper a2, #main-aside-wrapper a3,
 #main-aside-wrapper a4, #main-aside-wrapper a5, #main-aside-wrapper a6 {
   background: white;
@@ -53,7 +54,7 @@ header{
 }
 
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: landscape){
   #main-aside-wrapper {
     flex-direction: row wrap;
   }
@@ -64,6 +65,20 @@ header{
   #main-aside-wrapper a5{
 	  flex: 3;
 	  order: 4;
+  }
+  .menu ul {
+	
+  }
+
+  .menu li{
+	color: #e6ecf0;
+	display: block;
+  }
+
+  .menu a {
+	border: 1px solid #ADC0CE;
+	background: #e6ecf0;
+	color: #29838C;
   }
 }
 
@@ -87,8 +102,6 @@ header{
 li{
 	text-align: left;
 }
-
-
 
 .menu ul {
 	overflow: hidden;
