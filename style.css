@@ -111,7 +111,12 @@ li{
 
 nav{
 }
-
+.colorrr {
+  background:pink;
+}
+table{
+  background: #ADC0CE;
+}
 table, th, td {
     border: 1px solid black;
 	margin: 10px auto;
