@@ -76,13 +76,14 @@
 			</div></a3>
 			
 			<a4><table>
-				<tr><th>Столбец 1</th><th>Столбец 2</th><th>Столбец 3</th></tr>
-				<tr><td>Ячейка 11</td><td>Ячейка 12</td><td>Ячейка 13</td></tr>
-				<tr><td>Ячейка 21</td><td>Ячейка 22</td><td>Ячейка 23</td></tr>
-				<tr><td>Ячейка 31</td><td>Ячейка 32</td><td>Ячейка 33</td></tr>
-				<tr><td>Ячейка 41</td><td>Ячейка 42</td><td>Ячейка 43</td></tr>
-				<tr><td>Ячейка 51</td><td>Ячейка 52</td><td>Ячейка 53</td></tr>
-			</table></a4>    
+			<tr class="colorrr"><th>Столбец 1</th><th>Столбец 2</th><th>Столбец 3</th></tr>
+			<tr><td rowspan="2">Ячейка 11</td><td>Ячейка 12</td><td>Ячейка 13</td></tr>
+			<tr ><td>Ячейка 22</td><td>Ячейка 23</td></tr>
+			<tr class="colorrr"><td>Ячейка 31</td><td>Ячейка 32</td><td>Ячейка 33</td></tr>
+			<tr ><td>Ячейка 41</td><td>Ячейка 42</td><td>Ячейка 43</td></tr>
+			<tr class="colorrr"><td>Ячейка 51</td><td>Ячейка 52</td><td>Ячейка 53</td></tr>
+			<tr><td colspan="4">Ячейка 1234567</td></tr>
+		</table></a4>    
 		
 			<a5><h3>Форма</h3>
 			
@@ -120,15 +121,15 @@
 				3</label><br>
 			  <label><input type="radio" name="radio-group-2">
 				4</label><br>
+				
 			  <label>
-
-			Cверхспособности:<br>
-			  <select name="field-name-3">
-				 <option value="Значение1">Бессмертие</option>
-				 <option value="Значение2">Прохождение сквозь стены</option>
-				 <option value="Значение3">Левитация </option>
-			  </select>
-			  </label><br>
+                      Сверхспособности:<br />
+                      <select name="field-name-4[]" multiple="multiple">
+                        <option value="Значение1">Бессмертие</option>
+                        <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+                        <option value="Значение3" selected="selected">Левитация</option>
+                      </select>
+                    </label><br />
 
 			  <label>
 				Биография<br/>
